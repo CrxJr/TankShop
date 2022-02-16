@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cart | Tanks-U</title>
+	<link rel="icon" type="image/icon" href="Tank.jpg">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body class="container-fluid" onload="checkCookie()">
+
+
+		<div class="row">
+			<div class="col-lg-10 head col-md-9 col-sm-12 px-lg-0 px-md-0 px-sm-0">
+				<header>TANKS-U</header>
+			</div>
+			<div class="col-lg-2 head col-md-3 col-sm-12 px-lg-0 px-md-0 px-sm-0">
+				<img src="Tank.jpg" alt="Logo" class="img"></img>
+			</div>
+		</div>
+
+
+		<!--Navigation Area-->
+		<div>
+			<div class="offset-lg-2 col-lg-8 my-lg-4 col-md-2 col-sm-12 px-md-0 px-sm-0 float-lg-none float-md-left">
+				<nav class="py-2 center">
+					<a class = "links" href = "Home.html">Home</a>
+
+				<div class = "dropdown links">
+					<button class = "dropbtn" disabled="disabled">Training</button>
+					<div class = "dropdown-content">
+						<a href="Overview.html">Overview</a>
+						<a href="Shop.html">Shop</a>
+					</div>
+				</div>
+
+				<div class = "dropdown links">
+					<button class = "dropbtn"  disabled="disabled">Tanks</button>
+					<div class = "dropdown-content">
+						<a href="HeavyTanks.html">Heavy Tanks</a>
+						<a href="LightTanks.html">Light Tanks</a>
+						<a href="Other.html">Other</a>
+						<a href="Refurbishing.html">Refurbishing</a>
+					</div>
+				</div>
+				<a class="links" href="AboutUs.html">About Us</a>
+				</nav>
+			</div>
+		</div>
+		<!--End Navigation Area-->
+
+		<!--main body-->
+	<div class="row">
+		<div class="offset-lg-1 col-lg-10 col-md-12 col-sm-12 main float-md-right" id="Total">
+
+			<h1 class="center">Your Current Balance</h1>
+			<p id="List"></p>
+			<input type="button" id="clear" value="Clear Cart" disabled="disabled">
+			<input type="button" id="Buy" value="Buy now" disabled="disabled">
+		</div>
+	</div>
+	<!--End of the main body-->
+
+	<!--footer-->
+	<div class="row">
+		<footer class="col-lg-12 col-md-12 col-sm-12 px-0">
+			<p><a href="mailto:tanksU@gmail.com"><address>tanksU@gmail.com</address></a> &middot; 514-756-1937 &middot; Tanks-U&copy; </p>
+		</footer>
+	</div>
+
+<script src="jquery-3.3.1.js"></script>
+<script src="jquery.cookie.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
